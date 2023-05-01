@@ -1,0 +1,34 @@
+{
+  "name": "AI Block",
+  "description": "Enables a custom block that uses ChatGPT to complete prompts.",
+  "credits": [
+    {
+      "name": "MellowFishy",
+      "link": "https://scratch.mit.edu/users/MellowFishyOnYT/"
+    }
+  ],
+  "userscripts": [
+    {
+      "url": "userscript.js",
+      "matches": ["https://scratch.mit.edu/discuss/*"],
+      "runAtComplete": false
+    }
+  ],
+  "userstyles": [
+    {
+      "url": "fix-dropdown.css",
+      "matches": ["https://scratch.mit.edu/discuss/post/*/edit/"]
+    }
+  ],
+  "tags": ["community", "forums", "beta"],
+  "libraries": ["scratchblocks"],
+  "info": [
+    {
+      "type": "notice",
+      "text": "The built-in post preview does not support this addon.",
+      "id": "preview_notice"
+    }
+  ],
+  "versionAdded": "1.19.0",
+  "injectAsStyleElt": true
+}
